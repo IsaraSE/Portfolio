@@ -553,5 +553,488 @@
 </style>
 </head>
 <body>
+
+<!-- CURSOR -->
+<div class="cursor"><div class="cursor-dot" id="cdot"></div></div>
+<div class="cursor-ring" id="cring"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-icon">IE</div>
+    Isara Ekanayake
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+  </ul>
+  <button class="nav-mobile-btn" onclick="toggleMobileMenu()">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-edge"></div>
+  <div class="hero-content">
+    <div class="hero-badge" id="heroBadge">
+      <span class="dot"></span>
+      Available for opportunities
+    </div>
+    <h1 class="hero-name" id="heroName">
+      Isara<br><span class="accent">Ekanayake</span>
+    </h1>
+    <div class="hero-title" id="heroTitle">Software Engineering Student</div>
+    <p class="hero-desc" id="heroDesc">
+      Passionate about building elegant software solutions. Specializing in full-stack development, mobile apps, and modern web technologies.
+    </p>
+    <div class="hero-btns" id="heroBtns">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll" id="heroScroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <span class="stat-num" data-count="15">0</span>
+      <span class="stat-label">Projects Completed</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <span class="stat-num" data-count="8">0</span>
+      <span class="stat-label">Technologies Mastered</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <span class="stat-num" data-count="3">0</span>
+      <span class="stat-label">Years Coding</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <span class="stat-num" data-count="100">0</span>
+      <span class="stat-label">Passion %</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="section-label"><span>About Me</span></div>
+      <h2 class="reveal">Crafting digital experiences with purpose.</h2>
+      <p class="reveal reveal-delay-1">
+        I'm Isara Ekanayake, a Software Engineering student based in Sri Lanka with a deep passion for technology and problem-solving. I thrive at the intersection of elegant code and meaningful user experiences.
+      </p>
+      <p class="reveal reveal-delay-2">
+        From building full-stack web applications to developing mobile solutions, I approach every project with curiosity, attention to detail, and a commitment to clean, maintainable code.
+      </p>
+      <div class="about-links reveal reveal-delay-3">
+        <a href="https://github.com" target="_blank" class="about-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="about-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="#contact" class="about-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Resume
+        </a>
+      </div>
+    </div>
+    <div class="about-visual reveal">
+      <div class="about-card-main">
+        <div class="about-avatar">IE</div>
+        <div class="about-card-name">Isara Ekanayake</div>
+        <div class="about-card-role">Software Engineering Student</div>
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <label>Location</label>
+            <span>Sri Lanka 🇱🇰</span>
+          </div>
+          <div class="about-info-item">
+            <label>Status</label>
+            <span style="color:var(--orange)">● Available</span>
+          </div>
+          <div class="about-info-item">
+            <label>Degree</label>
+            <span>BSc Software Eng.</span>
+          </div>
+          <div class="about-info-item">
+            <label>Languages</label>
+            <span>Sinhala, English</span>
+          </div>
+        </div>
+        <div class="about-mini-cards" style="margin-top:28px">
+          <div class="about-mini-card">
+            <div class="mini-card-icon">💻</div>
+            <div>
+              <div style="font-size:.85rem;font-weight:600;margin-bottom:2px">Full-Stack Dev</div>
+              <div style="font-size:.78rem;color:var(--text-mute)">React · Node.js · Laravel</div>
+            </div>
+          </div>
+          <div class="about-mini-card">
+            <div class="mini-card-icon">📱</div>
+            <div>
+              <div style="font-size:.85rem;font-weight:600;margin-bottom:2px">Mobile Dev</div>
+              <div style="font-size:.78rem;color:var(--text-mute)">Flutter · React Native</div>
+            </div>
+          </div>
+          <div class="about-mini-card">
+            <div class="mini-card-icon">🎯</div>
+            <div>
+              <div style="font-size:.85rem;font-weight:600;margin-bottom:2px">Problem Solver</div>
+              <div style="font-size:.78rem;color:var(--text-mute)">Algorithms · System Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-header reveal">
+    <div class="section-label" style="justify-content:center"><span>Technical Skills</span></div>
+    <h2>Every tool I've mastered</h2>
+    <p>A curated stack of technologies I use to turn ideas into working software — from frontend pixels to backend infrastructure.</p>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <span class="skill-icon">⚛️</span>
+      <h3>Frontend Development</h3>
+      <p>Building responsive, performant, and beautiful user interfaces that users love to interact with.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Tailwind</span>
+      </div>
+      <a href="#projects" class="learn-link">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <span class="skill-icon">🔧</span>
+      <h3>Backend Development</h3>
+      <p>Designing scalable APIs, microservices, and data pipelines that power modern applications.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span><span class="skill-tag">Laravel</span><span class="skill-tag">Express</span><span class="skill-tag">REST APIs</span>
+      </div>
+      <a href="#projects" class="learn-link">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <span class="skill-icon">📱</span>
+      <h3>Mobile Development</h3>
+      <p>Cross-platform mobile applications with native performance and smooth user experiences.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span><span class="skill-tag">React Native</span>
+      </div>
+      <a href="#projects" class="learn-link">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">🗄️</span>
+      <h3>Databases</h3>
+      <p>Designing efficient database schemas and queries for both relational and NoSQL systems.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">MySQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">Firebase</span>
+      </div>
+      <a href="#projects" class="learn-link">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <span class="skill-icon">☁️</span>
+      <h3>DevOps & Cloud</h3>
+      <p>Containerized deployments and cloud infrastructure for reliable, scalable applications.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Docker</span><span class="skill-tag">AWS</span><span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
+      </div>
+      <a href="#projects" class="learn-link">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <span class="skill-icon">🤖</span>
+      <h3>AI & Machine Learning</h3>
+      <p>Implementing intelligent features using modern ML libraries and AI-driven solutions.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">scikit-learn</span>
+      </div>
+      <a href="#" class="learn-link">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label"><span>Featured Projects</span></div>
+      <h2 class="reveal">Things I've built</h2>
+    </div>
+    <p class="reveal reveal-delay-1">Selected projects that showcase my skills, creativity, and technical problem-solving.</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-number">01 — Web App</div>
+      <div class="project-icon-row">
+        <div class="project-icon">🛒</div>
+      </div>
+      <h3>E-Commerce Platform</h3>
+      <p>A full-featured e-commerce solution with real-time inventory management, payment integration, and an admin dashboard. Built with a focus on performance and UX.</p>
+      <div class="project-footer">
+        <div class="project-tech">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-glow"></div>
+      <div class="project-number">02 — Mobile App</div>
+      <div class="project-icon-row">
+        <div class="project-icon">📋</div>
+      </div>
+      <h3>Task Management App</h3>
+      <p>A cross-platform mobile productivity app with real-time sync, team collaboration, drag-and-drop boards, and smart notifications using Flutter.</p>
+      <div class="project-footer">
+        <div class="project-tech">
+          <span>Flutter</span><span>Firebase</span><span>Dart</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-glow"></div>
+      <div class="project-number">03 — Full Stack</div>
+      <div class="project-icon-row">
+        <div class="project-icon">🏥</div>
+      </div>
+      <h3>Healthcare Portal</h3>
+      <p>A hospital management system with appointment scheduling, patient records, prescription management, and analytics dashboard for medical staff.</p>
+      <div class="project-footer">
+        <div class="project-tech">
+          <span>Laravel</span><span>Vue.js</span><span>MySQL</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-glow"></div>
+      <div class="project-number">04 — API Service</div>
+      <div class="project-icon-row">
+        <div class="project-icon">🌐</div>
+      </div>
+      <h3>Real-Time Chat API</h3>
+      <p>A scalable WebSocket-based chat service supporting rooms, direct messages, file sharing, and read receipts with end-to-end encryption.</p>
+      <div class="project-footer">
+        <div class="project-tech">
+          <span>Node.js</span><span>Socket.io</span><span>Redis</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-glow"></div>
+      <div class="project-number">05 — Machine Learning</div>
+      <div class="project-icon-row">
+        <div class="project-icon">🧠</div>
+      </div>
+      <h3>Sentiment Analyzer</h3>
+      <p>NLP-powered tool that analyzes product reviews and social media posts to provide actionable sentiment insights with interactive visualizations.</p>
+      <div class="project-footer">
+        <div class="project-tech">
+          <span>Python</span><span>TensorFlow</span><span>Flask</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-glow"></div>
+      <div class="project-number">06 — Dev Tool</div>
+      <div class="project-icon-row">
+        <div class="project-icon">⚡</div>
+      </div>
+      <h3>CLI Code Generator</h3>
+      <p>A powerful command-line tool that scaffolds full-stack project structures, boilerplates, and component templates — saving hours of setup time.</p>
+      <div class="project-footer">
+        <div class="project-tech">
+          <span>Node.js</span><span>TypeScript</span><span>CLI</span>
+        </div>
+        <a href="https://github.com" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="projects-cta reveal">
+    <a href="https://github.com" target="_blank" class="btn-secondary">View All Projects on GitHub →</a>
+  </div>
+</section>
+
+<!-- GLOBE SECTION -->
+<section id="globe-section">
+  <canvas id="globe-canvas"></canvas>
+  <div class="globe-overlay">
+    <div class="globe-tag">🌏 Open to Remote Work</div>
+    <h2 class="globe-heading">Building for the<br>world, from Sri Lanka</h2>
+    <p class="globe-sub">Available for remote opportunities globally. Let's collaborate to build something remarkable together.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE & EDUCATION -->
+<section id="experience">
+  <div class="exp-grid">
+    <div class="exp-col">
+      <div class="section-label"><span>Experience</span></div>
+      <h2 class="reveal">Where I've Worked</h2>
+      <div class="timeline">
+        <div class="timeline-item active reveal">
+          <div class="timeline-date">2024 — Present</div>
+          <h3>Frontend Developer Intern</h3>
+          <div class="timeline-org">Tech Startup · Colombo, LK</div>
+          <p class="timeline-desc">Building React components, optimizing performance, and collaborating on a SaaS platform used by thousands of users.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-date">2023 — 2024</div>
+          <h3>Freelance Developer</h3>
+          <div class="timeline-org">Self-Employed</div>
+          <p class="timeline-desc">Delivered 8+ client projects including e-commerce platforms, portfolio sites, and custom web applications.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-date">2023</div>
+          <h3>Open Source Contributor</h3>
+          <div class="timeline-org">Various Projects · GitHub</div>
+          <p class="timeline-desc">Contributed bug fixes, features, and documentation to open source React and Node.js projects.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-col">
+      <div class="section-label"><span>Education</span></div>
+      <h2 class="reveal">Where I've Studied</h2>
+      <div class="timeline">
+        <div class="timeline-item active reveal">
+          <div class="timeline-date">2022 — Present</div>
+          <h3>BSc (Hons) Software Engineering</h3>
+          <div class="timeline-org">University · Sri Lanka</div>
+          <p class="timeline-desc">Studying core CS fundamentals, software architecture, algorithms, databases, and modern software engineering practices. GPA: 3.7/4.0</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-date">2021 — 2022</div>
+          <h3>Advanced Level — Physical Science</h3>
+          <div class="timeline-org">National School · Sri Lanka</div>
+          <p class="timeline-desc">Completed A/L examinations with distinction in Combined Mathematics, Physics, and Chemistry.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-date">2023</div>
+          <h3>AWS Cloud Practitioner</h3>
+          <div class="timeline-org">Amazon Web Services</div>
+          <p class="timeline-desc">Certified in foundational cloud concepts, AWS services, security, and architecture best practices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="section-label"><span>Contact</span></div>
+      <h2 class="reveal">Let's build something together.</h2>
+      <p class="reveal reveal-delay-1">Whether you have a project in mind, a job opportunity, or just want to say hello — my inbox is always open.</p>
+      <div class="contact-items reveal reveal-delay-2">
+        <a href="mailto:isara@example.com" class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <label>Email</label>
+            <span>isara.ekanayake@example.com</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="contact-item">
+          <div class="contact-item-icon">💼</div>
+          <div class="contact-item-text">
+            <label>LinkedIn</label>
+            <span>linkedin.com/in/isara-ekanayake</span>
+          </div>
+        </a>
+        <a href="https://github.com" target="_blank" class="contact-item">
+          <div class="contact-item-icon">🐙</div>
+          <div class="contact-item-text">
+            <label>GitHub</label>
+            <span>github.com/isara-ekanayake</span>
+          </div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <label>Location</label>
+            <span>Colombo, Sri Lanka 🇱🇰</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal reveal-delay-1">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@example.com">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" placeholder="Project collaboration, job opportunity...">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell me about your project or what you'd like to discuss..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;text-align:center;justify-content:center;padding:15px" onclick="handleFormSubmit(this)">
+        Send Message →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="nav-logo">
+    <div class="nav-logo-icon">IE</div>
+    Isara Ekanayake
+  </div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-socials">
+    <a href="https://github.com" target="_blank" class="social-btn" title="GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="social-btn" title="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    </a>
+    <a href="mailto:isara@example.com" class="social-btn" title="Email">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+  <div class="footer-copy">© 2026 Isara Ekanayake. Built with passion from Sri Lanka 🇱🇰</div>
+</footer>
+
+<!-- Lenis -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<!-- Three.js from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 </body>
 </html>
