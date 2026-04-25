@@ -2,7 +2,6 @@
 
 A modern, high-performance portfolio website built to showcase software engineering projects, skills, and experience. Designed with a premium dark-space aesthetic, featuring interactive 3D astronomy animations and a buttery-smooth scrolling experience.
 
-![Portfolio Preview](assets/preview.png) *(Note: Add a screenshot of your portfolio to the assets folder named preview.png)*
 
 ## ✨ Features
 
