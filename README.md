@@ -57,7 +57,7 @@ Portfolio/
 Software Engineering Student | Sri Lanka 🇱🇰  
 - [LinkedIn](https://linkedin.com/in/isara-ekanayake)
 - [GitHub](https://github.com/isara-ekanayake)
-- Email: isara.ekanayake@example.com
+- Email: isaraekanayake123@gmail.com
 
 ---
 
