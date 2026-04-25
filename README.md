@@ -1,6 +1,6 @@
 # 🌌 Isara Ekanayake | Software Engineer Portfolio
 
-**[🔴 Live Demo: View Portfolio](https://IsaraSE.github.io/Portfolio/)**
+**[🔴 Live Demo: View Portfolio](https://isarase-portfolio.surge.sh/)**
 
 A modern, high-performance portfolio website built to showcase software engineering projects, skills, and experience. Designed with a premium dark-space aesthetic, featuring interactive 3D astronomy animations and a buttery-smooth scrolling experience.
 
